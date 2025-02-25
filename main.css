@@ -6,24 +6,26 @@
 }
 
 body {
-    background-color: #E7E7E7;
     padding-top: 100px;
 }
+
 
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
 header img {
     height: 36px;
-    margin-left: 16px;
+    margin-right: 20px;
+    background-color: white;
 }
 
 header h1 {
+    font-family: "Sigmar", serif;
     font-size: 40px;
-    font-weight: bold;
 }
 
 .container {
@@ -38,12 +40,13 @@ form {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 56px;
+    margin-left: 30px;
 }
 
 form button {
     background-color: #009432;
     color: white;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -52,11 +55,13 @@ form button {
 }
 
 form input {
-    font-size: 24px;
+    display: flex;
+    font-size: 15px;
     background-color: white;
     border: none;
     border-bottom: 2px solid #000;
     padding: 8px;
+    justify-content: space-between;
 }
 
 table {
@@ -79,19 +84,4 @@ tbody td {
 
 table td img {
     height: 30px;
-}
-
-.resultado{
-    padding: 8px;
-    font-weight: bold;
-    background-color: #000;
-    border-radius: 3px;
-}
-
-.aprovado{
-    background-color: #009432;
-}
-
-.reprovado{
-    background-color: red;
 }
