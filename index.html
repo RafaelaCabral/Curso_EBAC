@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+   
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+ <style>
+        .slick-prev:before, .slick-next:before {
+            color: black; /* ou a cor que quiser, ex: #333, red, etc */
+        }
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            font-weight: bold;
+            background-color: #f78989;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .nav-link {
+            text-align: center;
+
+        }
+
+        section {
+            min-height: 100vh;
+            background-color: #fff;
+            padding-top: 70px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #cabecalho {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fcd6d6;
+            font-family: 'Courier New', Courier, monospace;
+            z-index: 999;
+        }
+
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        .carousel-control {
+            padding-top: 10%;
+            width: 5%;
+        }
+
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Portfólio</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills" id="navbar"> <!-- ← Aqui está o id correto -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certificacao">Certificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbie">Hobbies</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 mb-4 mb-md-0 text-center">
+                        <img src="./img/person.png" alt="Rafaela" class="img-fluid rounded w-75">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <p>Oi! Eu sou a Rafaela, tecnóloga em Análise e Desenvolvimento de Sistemas formada pela FATEC
+                            São José dos Campos. Sou apaixonada por tecnologia e por criar soluções que fazem a
+                            diferença. Ao longo da minha trajetória, participei de projetos desafiadores que envolveram
+                            inteligência artificial generativa, além de aplicações web e mobile desenvolvidas para
+                            grandes clientes, como Oracle e Dom Rock.</p>
+
+                        <p>Tenho experiência com desenvolvimento full-stack, análise de dados e metodologias ágeis.
+                            Gosto de planejar, me organizar e tenho facilidade em me comunicar — especialmente quando o
+                            assunto é compartilhar conhecimento ou colaborar em equipe.</p>
+                        <p>Minhas principais habilidades técnicas incluem TypeScript, React, Node.js, SQL, Python e o
+                            uso de frameworks ágeis como o Scrum. Estou sempre em busca de aprendizado e novas
+                            oportunidades para crescer como desenvolvedora.</p>
+                        <p>Se estiverem interessados em me conhecer melhor ou conversar sobre, estou a disposição!</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Inteligência Artificial Generativa</h4>
+                                <p class="card-text">Projeto acadêmico em grupo voltado ao desenvolvimento de uma
+                                    inteligência artificial capaz de analisar reviews de produtos em plataformas de
+                                    e-commerce, com o objetivo de apoiar o departamento de compras corporativas na
+                                    tomada de decisões. A IA foi projetada para gerar insights relevantes sobre a
+                                    qualidade, aceitação e tendências de consumo, comparando fornecedores com base em
+                                    feedbacks reais de clientes. A solução otimiza a seleção de produtos e parceiros
+                                    comerciais, tornando o processo mais estratégico e orientado por dados.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.2.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Agosto/2025 à Dezembro/2025</footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Sistema de Gestão de Parceiros</h4>
+                                <p class="card-text">Projeto acadêmico em grupo voltado ao desenvolvimento de uma
+                                    aplicação mobile para gerenciamento de parceiros da Oracle. A solução permite o
+                                    cadastro de novos parceiros, atualização de informações, acompanhamento do
+                                    desenvolvimento de conhecimento e geração de relatórios estratégicos. O sistema foi
+                                    projetado para facilitar o relacionamento e a gestão contínua dos parceiros de forma
+                                    eficiente e acessível em dispositivos móveis.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.1.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Fevereiro/2025 à Junho/2025</footer>
+                        </article>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Iniciação Tecnológica
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Sistema de Monitoramento de Utilização de Aplicações Web</h4>
+                                <p class="card-text">Projeto de pesquisa com foco em back-end, desenvolvido no Instituto
+                                    Nacional de Pesquisas Espaciais (INPE), voltado à melhoria da experiência do usuário
+                                    (UX) em sistemas web institucionais. O objetivo foi criar componentes para registrar
+                                    e analisar o uso de interfaces por meio de eventos capturados em tempo real,
+                                    armazenados em banco de dados e exibidos via dashboard interativo. O sistema permite
+                                    consultas filtradas e personalizadas, facilitando a visualização de padrões de uso e
+                                    apoiando decisões de aprimoramento das aplicações. A pesquisa seguiu uma abordagem
+                                    qualitativa e exploratória, com desenvolvimento incremental e iterativo, envolvendo
+                                    revisão bibliográfica, análise de sistemas existentes e construção de soluções
+                                    voltadas à eficiência dos serviços oferecidos pelo INPE à população.
+                                </p>
+                                <span>Devido ser um projeto para o <b>INPE</b> não é possível acessar o código</span>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>22/04/2025 20:29</time></footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class=" card-title">Sistema Circular de Produção de Saneantes</h4>
+                                <p class="card-text">Projeto acadêmico em grupo voltado ao desenvolvimento de uma
+                                    plataforma web para apoiar a gestão sustentável do descarte de óleo de cozinha
+                                    usado. A solução conecta estabelecimentos e parceiros coletores da empresa
+                                    Greenneat, gerenciando o acúmulo de créditos como contrapartida pela coleta do
+                                    material. Esses créditos podem ser posteriormente utilizados na compra de saneantes
+                                    na loja virtual da empresa, promovendo um ciclo de reaproveitamento eficiente e
+                                    consciente.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.1.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Fevereiro/2025 à Junho/2025</footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Sistema de Gerenciamento de Usuários com Autenticação e
+                                    Autorização</h4>
+                                <p class="card-text">Projeto acadêmico focado no desenvolvimento de um sistema web
+                                    para
+                                    gerenciamento de usuários, incluindo autenticação e autorização, com a
+                                    implementação
+                                    de microserviços. A solução visa garantir a segurança e o controle de acessos de
+                                    forma escalável, permitindo a criação de perfis de usuários, autenticação de
+                                    credenciais e definição de permissões para diferentes tipos de usuários. O
+                                    sistema
+                                    foi projetado para ser modular e flexível, utilizando a arquitetura de
+                                    microserviços
+                                    para promover a independência e escalabilidade de suas funcionalidades.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.1.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Fevereiro/2025 à Junho/2025</footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Aplicação Desktop para Gerenciamento de Canais e Acessos a
+                                    Finanças</h4>
+                                <p class="card-text">Projeto acadêmico em grupo com foco no desenvolvimento de uma
+                                    aplicação Java Desktop para registrar e gerenciar canais de marketplaces, meios de
+                                    pagamentos, plataformas e ERP, com autenticação via usuários, senhas ou tokens
+                                    fornecidos pelo cliente. A solução foi projetada para permitir que empresas
+                                    parceiras acessem as finanças de instituições cadastradas, oferecendo
+                                    funcionalidades para o cadastramento de usuários (administradores e operadores) e
+                                    páginas dedicadas à gestão dos canais, incluindo a edição e o controle de dados
+                                    financeiros.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.1.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Fevereiro/2025 à Junho/2025</footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card h-100 d-flex flex-column">
+                            <header class="card-header">
+                                Projeto Acadêmico
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Sistema de Classificação de Vagas e Cursos – Foco em TI</h4>
+                                <p class="card-text">Projeto acadêmico em grupo voltado ao desenvolvimento de uma
+                                    plataforma web para automação do processo de catalogação e classificação de vagas de
+                                    emprego e cursos, com ênfase na área de Tecnologia da Informação. O sistema organiza
+                                    oportunidades com base em métricas como tipos de conhecimento, habilidades e
+                                    competências exigidas, proporcionando uma navegação intuitiva e estratégica para os
+                                    usuários. A solução visa facilitar a identificação das oportunidades mais adequadas
+                                    ao perfil de cada pessoa.
+                                </p>
+                                <a href="https://github.com/RafaelaCabral/API-2024.1.git" class="btn btn-primary">Acesse
+                                    o projeto</a>
+                            </div>
+                            <footer class="card-footer">Fevereiro/2025 à Junho/2025</footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificacao">
+                <h2>Certificações</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <article class="card">
+                            <header class="card-header">
+                                Desenvolvimento Web
+                            </header>
+                            <div class="card-body">
+                                <h4 class="card-title">Cards Bootstrap</h4>
+                                <p class="card-text">Conheça os Cards do Bootstrap e suas variações</p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>22/04/2025 20:29</time></footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+                        <article class="card">
+                            <header class="card-header">
+                                Desenvolvimento Web
+                            </header>
+                            <img src="https://placehold.co/100x100">
+                            <div class="card-body">
+                                <h4 class="card-title">Cards Bootstrap</h4>
+                                <p class="card-text">Conheça os Cards do Bootstrap e suas variações</p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>22/04/2025 20:29</time></footer>
+                        </article>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+                        <article class="card">
+                            <header class="card-header">
+                                Desenvolvimento Web
+                            </header>
+                            <img src="https://placehold.co/100x100">
+                            <div class="card-body">
+                                <h4 class="card-title">Cards Bootstrap</h4>
+                                <p class="card-text">Conheça os Cards do Bootstrap e suas variações</p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>22/04/2025 20:29</time></footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hobbie">
+                <h2>Hobbie</h2>
+<div class="carousel">
+  <div><img src="https://placehold.co/300x200"></div>
+  <div><img src="https://placehold.co/300x200"></div>
+  <div><img src="https://placehold.co/300x200"></div>
+  <div><img src="https://placehold.co/300x200"></div>
+</div>
+            </section>
+
+        </div>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.carousel').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+</html>
