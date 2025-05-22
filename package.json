@@ -1,0 +1,26 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelaCabral/Curso_EBAC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelaCabral/Curso_EBAC/issues"
+  },
+  "homepage": "https://github.com/RafaelaCabral/Curso_EBAC#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
