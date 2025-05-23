@@ -1,21 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 body {
-  background-color: #eee;
-}
-
-header {
-  background-color: #eee;
-}
-header h1 {
-  color: #111;
-}
-
-button {
-  padding: 16px;
-  background-color: #111;
-  color: #eee;
-}
-button:hover {
-  background-color: yellow;
+  background-color: #ccc;
 }
 
 /*# sourceMappingURL=main.css.map */
