@@ -1,84 +1,100 @@
-@use 'config/reset.scss';
-@use 'config/variaveis.scss';
-@use 'sass:math';
-@mixin elementoForm() {
-    padding: 8px;
-    display: block;
-    width: 100%;
-    margin-bottom: 16px;
-}
+@use 'config/variaveis';
+@use 'config/reset';
 
-@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16) {
-    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
-}
 body {
-    background-color: #eee;
+  background-color: variaveis.$corDeFundo;
 }
 
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
-    background-color: variaveis.$corPrincipal;
-    padding: 16px;
-    text-align: center;
-    color: #fff;
-}
+  background-color: variaveis.$corHeader;
+  position: sticky;
+  top: 0;
+  left: 0;
 
-.form-container {
-    height: calc(100vh - 70px);
+  .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 760px;
+    padding: 16px 0;
+  }
 
-    h2 {
-        font-size: pixelParaEm(48px);
-        text-align: center;
+  .menu {
+    display: flex;
+
+    li {
+      font-weight: bold;
+      margin-left: 24px;
+
+      a {
+        color: variaveis.$corTextoClaro;
+        text-decoration: none;
+      }
     }
-
-    form {
-
-        max-width: 480px;
-        width: 100%;
-        margin-top: 40px;
-
-        label {
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        input {
-            @include elementoForm();
-            background-color: transparent;
-            border: none;
-            border-bottom: 3px solid variaveis.$corPrincipal;
-        }
-
-        button {
-            @include elementoForm();
-            background-color: variaveis.$corSecunda;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-
-            &:hover {
-                background-color: darken(variaveis.$corSecundaria, 15%);
-            }
-        }
-
-    }
+  }
 }
 
-@media screen and(max-width: variaveis.$mobile) {
-    .container{
-        max-width: 80%;
-    }
-    
+section {
+  padding: 56px 0;
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  p {
+    margin: 8px 0;
+  }
+}
+
+.product-button {
+  display: block;
+  background-color: variaveis.$corBotao;
+  color: variaveis.$corTextoClaro;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: variaveis.$corBotaoHover;
+  }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
 }
