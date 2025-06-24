@@ -1,13 +1,10 @@
 {
-  "name": "sass",
+  "name": "jp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "sass": "sass source/main.scss build/main.css --watch",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +18,6 @@
   },
   "homepage": "https://github.com/RafaelaCabral/Curso_EBAC#readme",
   "devDependencies": {
-    "sass": "^1.89.0"
+    "gulp": "^5.0.1"
   }
 }
