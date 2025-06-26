@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","home/rafaela/%C3%81rea%20de%20trabalho/JP/source/styles/variaveis.scss"],"names":[],"mappings":"AAEA;EACI,kBCHW","sourcesContent":["@use 'variaveis';\n\nbody{\n    background-color: variaveis.$corPrincipal;\n}","$corPrincipal: rgb(100, 0, 0);"],"file":"../main.css"}
